@@ -1,0 +1,189 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Josefin+Sans:400,600,700,400italic,600italic);
+
+body{
+  font-family: 'josefin sans';
+  font-size: 16px;
+}
+/* https://images.unsplash.com/photo-1439902315629-cd882022cea0?fit=crop&fm=jpg&h=975&q=80&w=1925 */
+.hero{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  transition: all 1.6s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.jumbotron.scrolled{
+  transform: translate3d(0, -100%, 0) scale(.75);
+  opacity: 0;
+}
+.jumbotron{
+  /*background-image: url('https://images.unsplash.com/photo-1442188950719-e8a67aea613a?fit=crop&fm=jpg&h=975&q=80&w=1925');*/
+  background-image: url('https://i.pinimg.com/originals/93/38/60/93386081cfe1d246f9075ef9d4d30f96.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  /*background-position: center;
+  display: table;
+  width: 100%;
+  
+  position: fixed;
+  top: 0;
+  left: -1px;*/
+}
+
+.display-4 {
+  color: white;
+}
+
+.lead {
+  color: white;
+}
+
+.hero-title{
+  display: table-cell;
+  vertical-align: middle; 
+  text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: montserrat;
+}
+.font-2{
+  font-family: 'josefin sans';
+  font-weight: 700;
+}
+.title{ letter-spacing: .3em; text-transform: uppercase; }
+.text-light{ color: #000 }
+.font-alt{
+  font-family: 'georgia';
+  font-style: italic;
+  color: #666;
+  border-color: black;
+}
+.hero{
+  overflow: hidden;
+  z-index: 1;
+}
+.content{
+  position: relative;
+  background-color: #fff;
+  border-top: 10px solid black;
+  padding: 0; 
+  margin: 0;
+  transition: all 1.6s cubic-bezier(0.86, 0, 0.07, 1);
+  transform: translate3d(0, 20px, 0) scale(.75);
+  opacity: 0;
+}
+.content.scrolled{
+  transform: translate3d(0, 0, 0) scale(1); 
+  opacity: 1;
+}
+.sd{
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sd:hover, .sd:focus{
+  color: #000;
+  opacity: .7;
+  text-decoration: none;
+}
+
+.text-uppercase {
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+/*.input-group.mb-3 {
+  width: 33%;
+}*/
+
+#explanation {
+  float: right;
+  padding-right: 300px;
+  width:840px;
+}
+
+.input-group.mb-3 {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.form-group {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#playertable {
+  display: none;
+  margin: 0 auto;
+ 
+}
+
+#extraspace {
+  height: 500px
+}
+
+#letsplay {
+
+}
+
+#timetoplay {
+  display: none;
+}
+
+.alert-success {
+  display: none;
+  width: 25%;
+  margin: 0 auto;
+}
+
+.exampleFormControlSelectRounds {
+  display: none;
+}
+
+#exampleFormControlSelect2 {
+}
+
+#playerselectforms {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+}
+
+#selectNumRounds {
+  display: none;
+  text-align: center;
+}
+
+.inputGroup-sizing-default {
+  width: 550px;
+}
+
+#RoundSummary {
+  display: none;
+  width: 400px;
+  margin: 0 auto;
+}
+
+#playerGuesses {
+  padding:40 40 40 40;
+}
+
+#NextRound {
+  display: none;
+
+}
+
+.list {
+  font-family:sans-serif;
+  margin:0;
+  padding:20px 0 0;
+}
+
+td {
+  padding:10px; 
+  border:solid 1px #eee;
+}
