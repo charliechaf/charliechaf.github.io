@@ -347,7 +347,7 @@ function addingScores () {
 $("#NextRound").click(function(){
 
 	if (sum == cards[round-1]) {
-		alert('Change your fucking guess.')
+		alert('Change your guess.')
 	}
 	else {
 
