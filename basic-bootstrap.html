@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel= "stylesheet" type="text/css" href= "css.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+
+<div class="jumbotron">
+  <h1 class="display-4">Nark & Fark!</h1>
+  <p class="lead">Nark & Fark is a simple, strategy card game.  </p>
+  <p class="lead">This is a score keeper for the game. </p>
+  <hr class="my-4">
+
+  <p class="lead">
+    <!-- <a id = "letsplay" class="btn btn-primary btn-lg"  href=# role="button">Let's Play</a> -->
+  </p>
+</div>
+
+
+<div class="container" id="playerselectforms">
+
+  <div class="input-group mb-3" id="player1">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-default">Player 1</span>
+    </div>
+    <input id="player1" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  </div>
+
+  <div class="input-group mb-3" id="player2">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-default">Player 2</span>
+    </div>
+    <input type="text"  id="player2" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  </div>
+
+  <div class="input-group mb-3" id="player3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-default">Player 3</span>
+    </div>
+    <input type="text" id="player3" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  </div>
+
+  <div class="input-group mb-3" id="player4">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-default">Player 4</span>
+    </div>
+    <input type="text" id="player4" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  </div>
+
+  <div class="input-group mb-3" id="player5">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-default">Player 5</span>
+    </div>
+    <input type="text"  id="player5" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  </div>
+
+  <div class="input-group mb-3" id="player6">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-default">Player 6</span>
+    </div>
+    <input type="text" id="player6" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+  </div>
+
+
+
+  <div class="container">
+    <input class="btn btn-primary" type="submit" value="Submit" id="playerSubmit" style="float: left; width: 100px; margin: 0 auto;">
+  </div>
+
+</div>
+
+<div class="dropdown" id="selectNumRounds">
+  <select>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+</select>
+</div>
+
+<div id="RoundSummary"> 
+
+</div>
+
+<div id="playerGuesses">
+
+</div>
+
+<div id="playerWins" style="float: right;">  </div>
+<div id="demo"></div>
+
+<div id="users">
+  <table>
+    <!-- IMPORTANT, class="list" have to be at tbody -->
+    <tbody class="list">
+      <tr>
+        <td class="name">Name</td>
+        <td class="guesses">Guess Log</td>
+        <td class="wins"> Win Log</td>
+        <td class="score">Score</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<div id="NextRound"> 
+  <button>Next Round</button>
+</div>
+
+<div id="PreviousRound"> 
+  <button>Previous Round</button>
+</div>
+
+
+
+
+
+<div id="extraspace">  
+</div>
+    <!-- Optional JavaScript -->
+
+    <script type="text/javascript" src="JS.js"></script>
+
+    
+</html>
+
+
