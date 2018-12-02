@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 }*/
 
 #explanation {
-  float: right;
+  float: left;
   padding-right: 300px;
   width:840px;
 }
@@ -173,6 +173,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #NextRound {
+  display: none;
+
+}
+
+#PreviousRound {
   display: none;
 
 }

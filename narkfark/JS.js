@@ -292,6 +292,7 @@ $("#selectNumRounds").change(function(e){
 	//alert(loopingPlayer);
 	$("#RoundSummary").css('display','block');
 	$("#NextRound").css('display','block');
+	$("#PreviousRound").css('display','block');
 	addFields();
 	//alert(cardsDealed);
 	
@@ -380,7 +381,11 @@ $("#NextRound").click(function(){
 
 $("#PreviousRound").click(function(){
 
-			
+    if (round == 1) {
+    alert("This is the first round")
+    }
+
+    else {
 		$(".alert-success").css('display','none');		
 
 	round = round -1;
@@ -388,7 +393,7 @@ $("#PreviousRound").click(function(){
 
 	addFields();
 	$("#playerWins").css('display','none');
-
+}
 });	
 
 
