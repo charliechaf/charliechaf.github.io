@@ -293,6 +293,7 @@ $("#selectNumRounds").change(function(e){
 	$("#RoundSummary").css('display','block');
 	$("#NextRound").css('display','block');
 	$("#PreviousRound").css('display','block');
+	$(".list").css('display','block');
 	addFields();
 	//alert(cardsDealed);
 	
