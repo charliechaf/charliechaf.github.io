@@ -253,7 +253,7 @@ $("#playerSubmit").click(function(){
 	}
 	else {
 		$("#playerselectforms").css('display','none');
-		$("#selectNumRounds").css('display','block');
+		$("#RoundDropdown").css('display','block');
 	}
 
 	updateTable();
@@ -264,11 +264,11 @@ $("#playerSubmit").click(function(){
 
 	
 
-$("#selectNumRounds").change(function(e){
-    selectedRounds = $('#selectNumRounds option:selected').text(); 
+$("#selectNumRounds a").click(function(e){
+    selectedRounds = $(this).text();
 	$(".alert-success").css('display','block');
 	$("#playertable").css('display','block');
-	$("#selectNumRounds").css('display','none');
+	$("#RoundDropdown").css('display','none');
 
 	var N = playerArray.length; 
 	playerCodes = Array.apply(null, {length: N}).map(Number.call, Number);
