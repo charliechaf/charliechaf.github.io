@@ -21,6 +21,7 @@
 
 
 <div class="jumbotron">
+  <div class="jumbotro text-center" id="introslide">
   <h1 class="display-4">Nark & Fark!</h1>
   <p class="lead">Nark & Fark is a simple, strategy card game.  </p>
   <p class="lead">This is a score keeper for the game. </p>
@@ -29,10 +30,10 @@
   <p class="lead">
     <!-- <a id = "letsplay" class="btn btn-primary btn-lg"  href=# role="button">Let's Play</a> -->
   </p>
+  </div>
 </div>
 
-
-<div class="container" id="playerselectforms">
+<div class="input-group mb-3" id="playerselectforms">
 
   <div class="input-group mb-3" id="player1">
     <div class="input-group-prepend">
@@ -74,30 +75,28 @@
       <span class="input-group-text" id="inputGroup-sizing-default">Player 6</span>
     </div>
     <input type="text" id="player6" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-  </div>
-
-
-
-  <div class="container">
-    <input class="btn btn-primary" type="submit" value="Submit" id="playerSubmit" style="float: left; width: 100px; margin: 0 auto;">
+    <div class="container mb-3">
+      <input class="btn btn-primary mb-3" type="submit" value="Submit" id="playerSubmit" style= "width: 100px; margin: auto;">
+    </div>
   </div>
 
 </div>
 
-<div class="dropdown" id="selectNumRounds">
+    <div class="dropdown" id="RoundDropdown">
+<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
   Select Number of Cards in First Round
-  <select>
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-  <option value="5">5</option>
-  <option value="6">6</option>
-  <option value="7">7</option>
-  <option value="8">8</option>
-</select>
-</div>
-
+</button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="selectNumRounds">
+      <a class="dropdown-item" >1</a>
+      <a class="dropdown-item" >2</a>
+      <a class="dropdown-item" >3</a>
+      <a class="dropdown-item" >4</a>
+      <a class="dropdown-item" >5</a>
+      <a class="dropdown-item" >6</a>
+      <a class="dropdown-item" >7</a>
+      <a class="dropdown-item" >8</a>
+    </div>
+  </div>
 <div id="RoundSummary"> 
 
 </div>
@@ -131,9 +130,6 @@
 <div id="PreviousRound"> 
   <button>Previous Round</button>
 </div>
-
-
-
 
 
 <div id="extraspace">  
