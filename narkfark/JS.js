@@ -84,7 +84,7 @@ function addFields(){
         var input = document.createElement("input");
         input.type = "number";
         input.setAttribute("id", "GuessInput"+i);
-        // alert(input.id);
+        input.setAttribute("class", "GuessInput");
         container.appendChild(input);
         x = container.appendChild(document.createElement("br"));
     }
@@ -101,7 +101,7 @@ function addWinFields(){
         var input = document.createElement("input");
         input.type = "number";
         input.setAttribute("id", "WinInput"+i);
-        // alert(input.id);
+        input.setAttribute("class", "WinInput");
         container.appendChild(input);
         x = container.appendChild(document.createElement("br"));
     }

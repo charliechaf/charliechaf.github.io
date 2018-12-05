@@ -126,6 +126,10 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+.inputss {
+text-align:center;
+}
+
 .alert-success {
   display: none;
   width: 25%;
@@ -163,14 +167,16 @@ h1, h2, h3, h4, h5, h6 {
   animation-name: pulse;
   animation-duration: .5s;
   animation-iteration-count: 2;
+  padding-bottom: 25px;
+
 }
 
 .bigger {
     font-size:30px;
 }
 
-#playerGuesses {
-  padding:40 40 40 40;
+.GuessInput,  .WinInput {
+  width:10%;
 }
 
 #NextRound {
