@@ -375,6 +375,9 @@ $("#NextRound").click(function(){
 
 
 		else {
+    addingScores();
+    calculateScore("player2");
+    updateTable();
 	alert("Game Over!");
 		}
 }
