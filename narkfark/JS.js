@@ -286,7 +286,7 @@ $("#selectNumRounds a").click(function(e){
 	reved = cardsDealt.slice().reverse();
 	cards = reved.concat(cardsDealt);
 	
-	$("#RoundSummary").html("Round {0}. <br> <br> {1} deal {2} cards! <br> <br> {3}, you guess first!".format(round, loopingPlayer[round-1], cards[round-1], loopingPlayer[round]));
+	$("#RoundSummary").html("Round <span class=\"bigger\"> {0}</span>. <br> <br> {1} deal {2} cards! <br> <br> {3}, you guess first!".format(round, loopingPlayer[round-1], cards[round-1], loopingPlayer[round]));
 	};
 
 	//alert(loopingPlayer);
@@ -365,8 +365,8 @@ $("#NextRound").click(function(){
 			$(".alert-success").css('display','none');		
 
 		round = round +1;
-		$("#RoundSummary").html("Round {0}. <br> <br> {1} deal {2} cards! <br> <br> {3}, you guess first!".format(round, loopingPlayer[round-1], cards[round-1], loopingPlayer[round]));
 
+		$("#RoundSummary").html("Round <span class=\"bigger\"> {0}</span>. <br> <br> {1} deal {2} cards! <br> <br> {3}, you guess first!".format(round, loopingPlayer[round-1], cards[round-1], loopingPlayer[round]));
 		addFields();
 		$("#playerWins").css('display','none');
 
@@ -390,7 +390,7 @@ $("#PreviousRound").click(function(){
 		$(".alert-success").css('display','none');		
 
 	round = round -1;
-	$("#RoundSummary").html("Round {0}. <br> <br> {1} deal {2} cards! <br> <br> {3}, you guess first!".format(round, loopingPlayer[round-1], cards[round-1], loopingPlayer[round]));
+	$("#RoundSummary").html("Round <span class=\"bigger\"> {0}</span>. <br> <br> {1} deal {2} cards! <br> <br> {3}, you guess first!".format(round, loopingPlayer[round-1], cards[round-1], loopingPlayer[round]));
 
 	addFields();
 	$("#playerWins").css('display','none');
