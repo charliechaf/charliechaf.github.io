@@ -158,6 +158,15 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
   width: 400px;
   margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  animation-name: pulse;
+  animation-duration: .5s;
+  animation-iteration-count: 2;
+}
+
+.bigger {
+    font-size:30px;
 }
 
 #playerGuesses {
@@ -184,4 +193,21 @@ h1, h2, h3, h4, h5, h6 {
 td {
   padding:10px; 
   border:solid 1px #eee;
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
