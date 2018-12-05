@@ -295,9 +295,9 @@ $("#selectNumRounds a").click(function(e){
 	$("#PreviousRound").css('display','block');
 	$(".list").css('display','block');
 	addFields();
-	//alert(cardsDealed);
-	
-	// alert(cardsDealt2);
+	addWinFields();
+	$("#playerWins").css('display','block');
+
 });
 
 
@@ -368,12 +368,16 @@ $("#NextRound").click(function(){
 
 		$("#RoundSummary").html("Round <span class=\"bigger\"> {0}</span>. <br> <br> {1} deal {2} cards! <br> <br> {3}, you guess first!".format(round, loopingPlayer[round-1], cards[round-1], loopingPlayer[round]));
 		addFields();
-		$("#playerWins").css('display','none');
+		addWinFields();
+
 
 	}
 
 
 		else {
+    addingScores();
+    calculateScore("player2");
+    updateTable();
 	alert("Game Over!");
 		}
 }
@@ -393,7 +397,6 @@ $("#PreviousRound").click(function(){
 	$("#RoundSummary").html("Round <span class=\"bigger\"> {0}</span>. <br> <br> {1} deal {2} cards! <br> <br> {3}, you guess first!".format(round, loopingPlayer[round-1], cards[round-1], loopingPlayer[round]));
 
 	addFields();
-	$("#playerWins").css('display','none');
 }
 });	
 
