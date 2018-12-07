@@ -295,22 +295,44 @@ $("#selectNumRounds a").click(function(e){
 	$("#player3tag").html("{0}'s Guess".format(playerArray[2]))
 	$("#player4tag").html("{0}'s Guess".format(playerArray[3]))
 	$("#player5tag").html("{0}'s Guess".format(playerArray[4]))
-	$("#player6tag").html("{0}'s Guess".format(playerArray[5]))
+    $("#player6tag").html("{0}'s Guess".format(playerArray[5]))
+
+    $("#player1Wintag").html("{0}'s Wins".format(playerArray[0]))
+    $("#player2Wintag").html("{0}'s Wins".format(playerArray[1]))
+    $("#player3Wintag").html("{0}'s Wins".format(playerArray[2]))
+    $("#player4Wintag").html("{0}'s Wins".format(playerArray[3]))
+    $("#player5Wintag").html("{0}'s Wins".format(playerArray[4]))
+    $("#player6Wintag").html("{0}'s Wins".format(playerArray[5]))
+
+
 
 	if (playerArray.length == 5) {
 	    $("#Guess6").css('display','none');
+	    $("#Wins").css('display','none');
 	} else if (playerArray.length == 4) {
         $("#Guess6").css('display','none');
         $("#Guess5").css('display','none');
+
+        $("#Wins6").css('display','none');
+        $("#Wins5").css('display','none');
 	} else if (playerArray.length == 3) {
 	    $("#Guess6").css('display','none');
     	$("#Guess5").css('display','none');
     	$("#Guess4").css('display','none');
+
+    	$("#Wins6").css('display','none');
+        $("#Wins5").css('display','none');
+        $("#Wins4").css('display','none');
 	} else if (playerArray.length == 2) {
-      	    $("#Guess6").css('display','none');
-          	$("#Guess5").css('display','none');
-          	$("#Guess4").css('display','none');
-          	$("#Guess3").css('display','none');
+        $("#Guess6").css('display','none');
+        $("#Guess5").css('display','none');
+        $("#Guess4").css('display','none');
+        $("#Guess3").css('display','none');
+
+        $("#Wins6").css('display','none');
+        $("#Wins5").css('display','none');
+        $("#Wins4").css('display','none');
+        $("#Wins3").css('display','none');
 };
 
 	$("#RoundSummary").css('display','block');
@@ -318,10 +340,6 @@ $("#selectNumRounds a").click(function(e){
 	$("#PreviousRound").css('display','block');
 	$(".list").css('display','block');
 	$("#playerGuesses").css('display','block');
-
-
-//	addFields();
-//	addWinFields();
 	$("#playerWins").css('display','block');
 
 });
@@ -344,8 +362,7 @@ $("#playerGuesses").change(function() {
     		alert('you can\'t guess that!');
     	}
     	else {
-    		addWinFields();
-    		$("#playerWins").css('display','block');
+
 
     	}
 	
@@ -393,8 +410,7 @@ $("#NextRound").click(function(){
 		round = round +1;
 
 		$("#RoundSummary").html("Round <span class=\"bigger\"> {0}</span>. <br> <br> {1} deal {2} cards! <br> <br> {3}, you guess first!".format(round, loopingPlayer[round-1], cards[round-1], loopingPlayer[round]));
-		addFields();
-		addWinFields();
+
 
 
 	}
@@ -422,7 +438,6 @@ $("#PreviousRound").click(function(){
 	round = round -1;
 	$("#RoundSummary").html("Round <span class=\"bigger\"> {0}</span>. <br> <br> {1} deal {2} cards! <br> <br> {3}, you guess first!".format(round, loopingPlayer[round-1], cards[round-1], loopingPlayer[round]));
 
-	addFields();
 }
 });	
 
