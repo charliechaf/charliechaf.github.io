@@ -176,7 +176,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #NextRound {
   display: none;
-  width:30px;
+  width:110px;
+
     margin: 0 auto;
     text-align: center;
     vertical-align: middle;
@@ -184,7 +185,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #PreviousRound {
   display: none;
-  width:30px;
+  width:140px;
+
     margin: 0 auto;
     text-align: center;
     vertical-align: middle;
