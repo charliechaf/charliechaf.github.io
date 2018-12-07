@@ -17,19 +17,22 @@ body{
   transform: translate3d(0, -100%, 0) scale(.75);
   opacity: 0;
 }
+*/
 .jumbotron{
   background-image: url('https://i.pinimg.com/originals/93/38/60/93386081cfe1d246f9075ef9d4d30f96.jpg');
-  height: 100vh;
+  height: 40vh;
   background-size: cover;
   background-attachment: fixed;
-}*/
+
+  background-color:#000000;
+}
 
 .display-4 {
   color: #167FFB;
 }
 
 .lead {
-  color: gray;
+  color: white;
 }
 
 .hero-title{
