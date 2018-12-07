@@ -409,7 +409,7 @@ $("#NextRound").click(function(){
 
 		round = round +1;
 
-		$("#RoundSummary").html("Round <span class=\"bigger\"> {0}</span>. <br> <br> {1} deal {2} cards! <br> <br> {3}, you guess first!".format(round, loopingPlayer[round-1], cards[round-1], loopingPlayer[round]));
+		$("#RoundSummary").html("Round <span class=\"bigger\"> {0}</span> <br> <br> {1} deal {2} cards! <br> <br> {3}, you guess first!".format(round, loopingPlayer[round-1], cards[round-1], loopingPlayer[round]));
 
         $('#WinInput0').val(''); $('#GuessInput0').val('');
         $('#WinInput1').val(''); $('#GuessInput1').val('');
@@ -442,7 +442,7 @@ $("#PreviousRound").click(function(){
 		$(".alert-success").css('display','none');		
 
 	round = round -1;
-	$("#RoundSummary").html("Round <span class=\"bigger\"> {0}</span>. <br> <br> {1} deal {2} cards! <br> <br> {3}, you guess first!".format(round, loopingPlayer[round-1], cards[round-1], loopingPlayer[round]));
+	$("#RoundSummary").html("Round <span class=\"bigger\"> {0}</span> <br> <br> {1} deal {2} cards! <br> <br> {3}, you guess first!".format(round, loopingPlayer[round-1], cards[round-1], loopingPlayer[round]));
 
 }
 });	
