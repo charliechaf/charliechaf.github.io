@@ -176,13 +176,19 @@ h1, h2, h3, h4, h5, h6 {
 #NextRound {
   display: none;
   width:30px;
-
+  width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
 }
 
 #PreviousRound {
   display: none;
   width:30px;
-
+  width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
 }
 
 #playerGuesses, #playerWins {
