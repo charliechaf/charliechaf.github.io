@@ -183,6 +183,10 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+#playerGuesses {
+display:none;
+}
+
 .list {
   font-family:sans-serif;
   margin:0;
