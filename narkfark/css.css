@@ -77,6 +77,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 50%;
   transform: translateX(-50%);
 }
+
 .sd:hover, .sd:focus{
   color: #000;
   opacity: .7;
@@ -175,12 +176,24 @@ h1, h2, h3, h4, h5, h6 {
 
 #NextRound {
   display: none;
+  width:110px;
 
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
 }
 
 #PreviousRound {
   display: none;
+  width:140px;
 
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#playerGuesses, #playerWins {
+display:none;
 }
 
 .list {
