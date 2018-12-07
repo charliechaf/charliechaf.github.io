@@ -411,6 +411,12 @@ $("#NextRound").click(function(){
 
 		$("#RoundSummary").html("Round <span class=\"bigger\"> {0}</span>. <br> <br> {1} deal {2} cards! <br> <br> {3}, you guess first!".format(round, loopingPlayer[round-1], cards[round-1], loopingPlayer[round]));
 
+        $('#WinInput0').val(''); $('#GuessInput0').val('');
+        $('#WinInput1').val(''); $('#GuessInput1').val('');
+        $('#WinInput2').val(''); $('#GuessInput2').val('');
+        $('#WinInput3').val(''); $('#GuessInput3').val('');
+        $('#WinInput4').val(''); $('#GuessInput4').val('');
+        $('#WinInput5').val(''); $('#GuessInput5').val('');
 
 
 	}
