@@ -197,6 +197,14 @@ h1, h2, h3, h4, h5, h6 {
 
 #playerGuesses, #playerWins {
 display:none;
+float:left;
+margin-right:5px;
+}
+
+.inputWrapper {
+margin: 0 auto;
+width:45%;
+text-align: center;
 }
 
 .list {
