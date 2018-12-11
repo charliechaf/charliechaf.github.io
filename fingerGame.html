@@ -2,13 +2,11 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <body ontouchstart="countTouches(event)" ontouchend="countTouches(event)">
-
-
-
-
-
-<p style="font-family: 'Merriweather', serif; font-size:400px; margin-left: auto; margin-right: auto; width: 50px;"> <span id="demo">0</span></p>
-
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+<link rel= "stylesheet" type="text/css" href= "clickCounter/clickCounter.css">
+<div class="wrapper">
+<div class="numberDisplay"> <span id="demo">0</span></div>
+</div>
 <script>
 function countTouches(event) {
   var x = event.touches.length;
