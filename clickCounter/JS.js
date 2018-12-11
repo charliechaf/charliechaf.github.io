@@ -12,14 +12,14 @@ $("#clickBox").mouseup(function(){
 });
 
 
-$("#clickBox").bind('touchstart',function(){
+$("#clickBox").ontouchstart(function(){
     counter = counter +1
     $(".numberDisplay").html(counter)
 });
 
 
 
-$("#clickBox").bind('touchend',function(){
+$("#clickBox").ontouchend(function(){
     counter = counter -1
     $(".numberDisplay").html(counter)
 });
