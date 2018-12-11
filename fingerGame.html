@@ -12,6 +12,9 @@ function countTouches(event) {
   var x = event.touches.length;
   document.getElementById("demo").innerHTML = x;
 }
+
+$('body').bind('touchmove', function(e){e.preventDefault()})
+
 </script>
 
 </body>
