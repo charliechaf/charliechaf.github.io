@@ -16,5 +16,11 @@
 </body>
 
 
-<script type="text/javascript" src="clickCounter/JS.js"></script>
+<script>
+function countTouches(event) {
+  var x = event.touches.length;
+  document.getElementById("numberDisplay").innerHTML = x;
+}
+</script>
+
 </html>
