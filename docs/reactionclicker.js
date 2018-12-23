@@ -1,4 +1,5 @@
 var start = new Date().getTime();
+console.log(window.innerWidth)
 
 			var sum = 0;
 
@@ -18,7 +19,7 @@ var start = new Date().getTime();
 
 				var top = Math.random() * 150;
 
-				var left = Math.random() * 1100;
+				var left = Math.random() * window.innerWidth;
 
 				var width = Math.random() * 400 +10;
 
