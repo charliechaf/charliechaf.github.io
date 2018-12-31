@@ -1,0 +1,67 @@
+.title{
+    grid-area: title;
+    justify-self:center;
+
+}
+
+.header{
+    display: grid;
+    grid-area: header;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 3fr 1fr;
+    place-items:center;
+    visibility:show;
+    grid-template-areas:
+    "playerHeader playerHeader"
+    "inputFields inputFields"
+    "submit submit"
+}
+
+.playerHeader{
+    grid-area: playerHeader;
+}
+
+.submit{
+    grid-area:submit;
+}
+
+.sidebar{
+    display:grid;
+    place-items:center;
+    grid-gap:1em;
+}
+
+.content{
+    display:grid;
+    grid-area:content;
+    place-items:center;
+    grid-template-columns:1fr 1fr;
+}
+
+.inputFields{
+    grid-area: inputFields;
+}
+
+.users{
+    grid-area: users;
+}
+
+.wrapper{
+    display:grid;
+    grid-template-columns:1fr 10fr;
+    grid-gap:1em;
+    grid-template-areas:
+    "title title"
+    "header header"
+    "sidebar content"
+    "users users"
+}
+
+.wrapper > div {
+    background:#eee;
+    padding:1em;
+}
+
+.wrapper > div:nth-child(odd) {
+      background:lightblue;
+}

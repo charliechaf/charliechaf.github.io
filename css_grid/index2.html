@@ -1,0 +1,59 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grids</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main2.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div class="title"><h1 class="display-4">Nark & Fark!</h1>
+        <p class="lead">Nark & Fark is a simple, strategy card game.  </p>
+        <p class="lead">This is a score keeper for the game. </p></div>
+    <div class="header">
+        <div class="playerHeader">Enter Player Names</div>
+            <div class="inputFields">
+                <div> <input type="text" id="Player1Name"></div>
+                <div> <input type="text" id="Player2Name"></div>
+                <div> <input type="text" id="Player3Name"></div>
+                <div> <input type="text" id="Player4Name"></div>
+                <div> <input type="text" id="Player5Name"></div>
+                <div> <input type="text" id="Player6Name"></div>
+            </div>
+        <div class="submit"><button id="playerSubmit">Start Game</button> </div>
+    </div>
+    <div class="sidebar" id="playerGuesses">
+
+        <!--<div> <input id="player1" type="submit" value="player1"> </div>-->
+        <!--<div> <input id="player2" type="submit" value="player2"> </div>-->
+        <!--<div> <input id="player3" type="submit" value="player3"> </div>-->
+        <!--<div> <input id="player4" type="submit" value="player4"> </div>-->
+        <!--<div> <input id="player5" type="submit" value="player5"> </div>-->
+        <!--<div> <input id="player6" type="submit" value="player6"> </div>-->
+
+    </div>
+    <div class="content">
+
+        <div><button id="prevRound">Previous Round</button></div>
+
+        <div><button id="nextRound">Next Round</button></div>
+
+        <div class="playerInput"><input id="playerGuess" type="number" placeholder="Guess"></div>
+        <div class="playerInput"><input id="playerWins" type="number" placeholder="Wins"></div>
+
+    </div>
+    <div class="users">
+    Scoreboard
+    </div>
+</div>
+
+</body>
+
+<script type="text/javascript" src="gulpfile.js"></script>
+</html>

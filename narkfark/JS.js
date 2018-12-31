@@ -255,6 +255,7 @@ $("#playerSubmit").click(function(){
 	else {
 		$("#playerselectforms").css('display','none');
 		$("#RoundDropdown").css('display','block');
+
 	}
 
 	updateTable();
@@ -270,6 +271,7 @@ $("#selectNumRounds a").click(function(e){
 	$(".alert-success").css('display','block');
 	$("#playertable").css('display','block');
 	$("#RoundDropdown").css('display','none');
+	$(".jumbotron").css('display','none');
 
 	var N = playerArray.length; 
 	playerCodes = Array.apply(null, {length: N}).map(Number.call, Number);
