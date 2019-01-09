@@ -309,6 +309,19 @@ var Radardata =  {
                       jsonPath(data,`$.[${10}].avg_goals`)[0],
                       jsonPath(data,`$.[${10}].avg_pos`)[0],
                       jsonPath(data,`$.[${10}].avg_crosses`)[0]]
+                  }, {
+                        label: "Burnley",
+                        fill: true,
+                        backgroundColor: "RGB(108,29,69)",
+                        borderColor: "RGB(153,214,234)",
+                        pointBorderColor: "#fff",
+                        pointBackgroundColor: "rgba(108,29,69,1)",
+                        pointBorderColor: "#fff",
+                        data: [jsonPath(data,`$.[${3}].avg_shots`)[0],
+                        jsonPath(data,`$.[${3}].avg_shots`)[0],
+                        jsonPath(data,`$.[${3}].avg_goals`)[0],
+                        jsonPath(data,`$.[${3}].avg_pos`)[0],
+                        jsonPath(data,`$.[${3}].avg_crosses`)[0]]
         }]
     }
 var Radaroptions = {
