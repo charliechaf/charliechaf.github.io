@@ -277,3 +277,49 @@ var bubbleChart = new Chart(ctx, {
         }
     }
 });
+
+var rtx = document.getElementById("radar").getContext("2d");
+var ranvas = document.getElementById('radar');
+
+
+var Radardata =  {
+        labels: ['Passes', 'Shots', 'Goals', 'Possession','Crosses'],
+        datasets: [{
+            label: "Manchester City",
+                      fill: true,
+                      backgroundColor: "rgba(179,181,198,0.2)",
+                      borderColor: "rgba(179,181,198,1)",
+                      pointBorderColor: "#fff",
+                      pointBackgroundColor: "rgba(179,181,198,1)",
+                      data: [jsonPath(data,`$.[${11}].avg_shots`)[0],
+                      jsonPath(data,`$.[${11}].avg_shots`)[0],
+                      jsonPath(data,`$.[${11}].avg_goals`)[0],
+                      jsonPath(data,`$.[${11}].avg_pos`)[0],
+                      jsonPath(data,`$.[${11}].avg_crosses`)[0]]
+                    }, {
+                      label: "Liverpool",
+                      fill: true,
+                      backgroundColor: "rgba(255,99,132,0.2)",
+                      borderColor: "rgba(255,99,132,1)",
+                      pointBorderColor: "#fff",
+                      pointBackgroundColor: "rgba(255,99,132,1)",
+                      pointBorderColor: "#fff",
+                      data: [jsonPath(data,`$.[${10}].avg_shots`)[0],
+                      jsonPath(data,`$.[${10}].avg_shots`)[0],
+                      jsonPath(data,`$.[${10}].avg_goals`)[0],
+                      jsonPath(data,`$.[${10}].avg_pos`)[0],
+                      jsonPath(data,`$.[${10}].avg_crosses`)[0]]
+        }]
+    }
+var Radaroptions = {
+             scale: {
+//                  Hides the scale
+                 display: true
+             }
+         };
+
+var myRadarChart = new Chart(rtx, {
+    type: 'radar',
+    data: Radardata,
+    options: Radaroptions
+});
