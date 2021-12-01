@@ -8280,7 +8280,7 @@ textarea.form-control {
       border-color: #a57f48 !important;
       background: #a57f48 !important; }
 
-.contactForm .label {
+.contactForm .label #statsSummary {
   color: #fff;
   text-transform: uppercase;
   font-size: 12px;
@@ -8303,7 +8303,7 @@ textarea.form-control {
 #message {
   resize: vertical; }
 
-#form-message-warning, #form-message-success {
+#form-message-warning, #form-message-success, #statsSummary, #showForm {
   display: none; }
 
 #form-message-warning {
@@ -8311,6 +8311,11 @@ textarea.form-control {
 
 #form-message-success {
   color: #28a745;
+  font-size: 20px;
+  font-weight: 700; }
+
+#statsSummary {
+  color: #fff;
   font-size: 20px;
   font-weight: 700; }
 
